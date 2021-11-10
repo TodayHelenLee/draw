@@ -6,6 +6,19 @@
   </head>
   <link
     rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css"
+    integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+    integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <link
+    rel="stylesheet"
     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
     crossorigin="anonymous"
@@ -62,15 +75,13 @@
         <span class="label">畫筆顏色</span>
         <div class="file">
           <input type="file" value="選擇圖片" @change="search_photo" />
-          <a id="save" @click="save" href="#" download="di.jpg">儲存</a>
+
+          <button type="button" class="btn btn-primary">
+            <a id="save" @click="save" href="#" download="di.jpg">儲存</a>
+          </button>
         </div>
 
-        <div
-          id="canvasDiv"
-          class="canvasDiv"
-          @dblclick="clear_focus"
-          style="width: 95%"
-        >
+        <div id="canvasDiv" class="canvasDiv" @dblclick="clear_focus">
           <canvas id="c" width="1920" height="1080"></canvas>
         </div>
       </div>
