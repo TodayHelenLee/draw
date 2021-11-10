@@ -4,8 +4,13 @@
   padding: 0;
 }
 
+#app {
+  margin-top: -400px;
+  margin-bottom: 40px;
+}
+
 #save {
-  color: rgb(3, 3, 3);
+  color: white;
   text-decoration: none;
 }
 
@@ -91,6 +96,13 @@ li {
 
 .label {
   transform: translate(200px, 40px);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.btn {
+  color: white;
+  transform: translate(600px, -20px);
   display: inline-block;
   margin-bottom: 10px;
 }

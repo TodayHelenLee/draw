@@ -75,11 +75,10 @@
         <span class="label">畫筆顏色</span>
         <div class="file">
           <input type="file" value="選擇圖片" @change="search_photo" />
-
-          <button type="button" class="btn btn-primary">
-            <a id="save" @click="save" href="#" download="di.jpg">儲存</a>
-          </button>
         </div>
+        <button type="button" class="btn btn-primary">
+          <a id="save" @click="save" href="#" download="di.jpg">儲存圖片</a>
+        </button>
 
         <div id="canvasDiv" class="canvasDiv" @dblclick="clear_focus">
           <canvas id="c" width="1920" height="1080"></canvas>
